@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FoC</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+
+<header>
+  <h2><b> Fundementals of computing</b></h2>
+</header>
+
+<section>
+<h2>Project 1: UNICODE</h2>
+<hr>in computer systems, characters are transformed and stored as numbers (sequences of bits) that can be handled by the processor. A code page is an encoding scheme that maps a specific sequence of bits to its character representation. The pre-Unicode world was populated with hundreds of different encoding schemes that assigned a number to each letter or character. Many such schemes included code pages that contained only 256 characters - each character requiring 8 bits of storage. While this was relatively compact, it was insufficient to hold ideographic character sets containing thousands of characters such as Chinese and Japanese, and also did not allow the character sets of many languages to co-exist with each other.</h2>
+
+<center>
+<p>Please input UNICODE number:</p>
+
+<input id="numb" type="text">
+
+<button type="button" onclick="myFunction()">Submit</button>
+<br>
+<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+ 
+  <tr>
+    <th><center><p id="demo"></center></p></th>
+  </tr>
+  
+</table>
+
+
+<p><img src="uni1.jpg" style="width:700px;height:500px;"></p>
+<p><img src="uni3.jpg" style="width:700px;height:500px;"></p>        
+<p><img src="uni4.jpg" style="width:700px;height:500px;"></p>  			
+
+<p></p>
+<p></p>         
+
+<br>
+
+
+</center>
+
+<script>
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  
+    text = x;
+    unicode = ("&#x" + x)
+  
+  document.getElementById("demo").innerHTML = unicode;
+}
+</script>
+
+
+</section>
+
+
+<a href="index.html">Back to Home</a></h3>
+
+<footer>
+  <p>@ Powered by UB</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
